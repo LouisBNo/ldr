@@ -10,6 +10,7 @@ SerialPin.USB_RX,
 BaudRate.BaudRate115200
 )
 let toestand = 1
+basic.pause(100)
 basic.forever(function () {
     if (pins.analogReadPin(AnalogPin.P0) < 250) {
         PO_tijd1 = input.runningTime()
